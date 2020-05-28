@@ -4,7 +4,7 @@ import org.jetbrains.exposed.sql.ComparisonOp
 import org.jetbrains.exposed.sql.Expression
 
 /**
- * Represents an SQL operator that checks if [vector] is matches to a [query] or vice versa.
+ * Represents an SQL operator that checks if [vector] matches [query].
  */
 class AtAtOp(
         vector: Expression<*>,
