@@ -5,7 +5,7 @@ import org.jetbrains.exposed.sql.Column
 import org.jetbrains.exposed.sql.CustomFunction
 
 /**
- * Checks if [this] tsvector column is equals to some [tsQuery] query.
+ * Checks if [this] tsvector column is matches to some [tsQuery] query.
  */
 @Suppress("FunctionName")
 infix fun <T> Column<T>.`@@`(tsQuery: CustomFunction<*>): AtAtOp =
